@@ -15,6 +15,8 @@
 		9B6AC8EC1DCAE41B00C5F3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AC8EA1DCAE41B00C5F3F5 /* LaunchScreen.storyboard */; };
 		9B6AC8F71DCAE41B00C5F3F5 /* tabcellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AC8F61DCAE41B00C5F3F5 /* tabcellTests.m */; };
 		9B6AC9021DCAE41B00C5F3F5 /* tabcellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AC9011DCAE41B00C5F3F5 /* tabcellUITests.m */; };
+		9B6AC9121DCAE72300C5F3F5 /* SHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AC9111DCAE72300C5F3F5 /* SHTableViewCell.m */; };
+		9B7FE32E1DCB43C6008D7B42 /* FuckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FE32D1DCB43C6008D7B42 /* FuckView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9B6AC8FD1DCAE41B00C5F3F5 /* tabcellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabcellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6AC9011DCAE41B00C5F3F5 /* tabcellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabcellUITests.m; sourceTree = "<group>"; };
 		9B6AC9031DCAE41B00C5F3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6AC9101DCAE72300C5F3F5 /* SHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTableViewCell.h; sourceTree = "<group>"; };
+		9B6AC9111DCAE72300C5F3F5 /* SHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTableViewCell.m; sourceTree = "<group>"; };
+		9B7FE32C1DCB43C6008D7B42 /* FuckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckView.h; sourceTree = "<group>"; };
+		9B7FE32D1DCB43C6008D7B42 /* FuckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 		9B6AC8DB1DCAE41B00C5F3F5 /* tabcell */ = {
 			isa = PBXGroup;
 			children = (
+				9B6AC90F1DCAE70600C5F3F5 /* cellView */,
 				9B6AC8DF1DCAE41B00C5F3F5 /* AppDelegate.h */,
 				9B6AC8E01DCAE41B00C5F3F5 /* AppDelegate.m */,
 				9B6AC8E21DCAE41B00C5F3F5 /* ViewController.h */,
 				9B6AC8E31DCAE41B00C5F3F5 /* ViewController.m */,
 				9B6AC8E51DCAE41B00C5F3F5 /* Main.storyboard */,
+				9B7FE32C1DCB43C6008D7B42 /* FuckView.h */,
+				9B7FE32D1DCB43C6008D7B42 /* FuckView.m */,
 				9B6AC8E81DCAE41B00C5F3F5 /* Assets.xcassets */,
 				9B6AC8EA1DCAE41B00C5F3F5 /* LaunchScreen.storyboard */,
 				9B6AC8ED1DCAE41B00C5F3F5 /* Info.plist */,
@@ -138,6 +147,15 @@
 				9B6AC9031DCAE41B00C5F3F5 /* Info.plist */,
 			);
 			path = tabcellUITests;
+			sourceTree = "<group>";
+		};
+		9B6AC90F1DCAE70600C5F3F5 /* cellView */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AC9101DCAE72300C5F3F5 /* SHTableViewCell.h */,
+				9B6AC9111DCAE72300C5F3F5 /* SHTableViewCell.m */,
+			);
+			name = cellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7FE32E1DCB43C6008D7B42 /* FuckView.m in Sources */,
 				9B6AC8E41DCAE41B00C5F3F5 /* ViewController.m in Sources */,
 				9B6AC8E11DCAE41B00C5F3F5 /* AppDelegate.m in Sources */,
+				9B6AC9121DCAE72300C5F3F5 /* SHTableViewCell.m in Sources */,
 				9B6AC8DE1DCAE41B00C5F3F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +534,7 @@
 				9B6AC9081DCAE41B00C5F3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B6AC9091DCAE41B00C5F3F5 /* Build configuration list for PBXNativeTarget "tabcellTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +543,7 @@
 				9B6AC90B1DCAE41B00C5F3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B6AC90C1DCAE41B00C5F3F5 /* Build configuration list for PBXNativeTarget "tabcellUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +552,7 @@
 				9B6AC90E1DCAE41B00C5F3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
